@@ -9,7 +9,7 @@ class PasswordValidationTest(StaticLiveServerTestCase):
     def setUpClass(cls):
         super().setUpClass()
         opts = Options()
-        # opts.add_argument("--headless")
+        opts.add_argument("--headless")
         cls.selenium = WebDriver(options=opts)
         cls.selenium.implicitly_wait(5)
         # creem superusuari
